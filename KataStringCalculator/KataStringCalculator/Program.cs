@@ -18,6 +18,8 @@ namespace KataStringCalculator
             Console.WriteLine("Result: {0}", calculator.Add("1\n3"));
             Console.WriteLine("Three numbers, ',' and '\\n' delimitators:");
             Console.WriteLine("Result: {0}", calculator.Add("1\n3,4"));
+            Console.WriteLine("Invalid format");
+            Console.WriteLine("Result: {0}", calculator.Add("11,\n"));
 
             Console.ReadKey();
         }

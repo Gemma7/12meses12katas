@@ -58,6 +58,18 @@ namespace KataStringCalculatorTests
             Assert.IsTrue(result == 3);
 
         }
+
+        [TestMethod]
+        public void AddTest_InvalidFormat()
+        {
+            string numberString = "11,\n";
+
+            var result = calculator.Add(numberString);
+
+            Assert.IsTrue(result == -1);
+
+        }
+
         // There is no need to test for invalid inputs 
         //[ExpectedException(typeof(FormatException))]
         //[TestMethod]
