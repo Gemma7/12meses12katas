@@ -47,6 +47,17 @@ namespace KataStringCalculatorTests
             Assert.IsTrue(result == 3);
             
         }
+
+        [TestMethod]
+        public void AddTest_TwoNumbers_NewLineDelimitar()
+        {
+            string numberString = "1\n2";
+
+            var result = calculator.Add(numberString);
+
+            Assert.IsTrue(result == 3);
+
+        }
         // There is no need to test for invalid inputs 
         //[ExpectedException(typeof(FormatException))]
         //[TestMethod]
